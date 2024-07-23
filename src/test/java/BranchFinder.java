@@ -14,7 +14,8 @@ public class BranchFinder extends hooks{
 
     @DataProvider(name = "postalCodes")
     public Object[][] postalCodesProvider() throws IOException {
-        List<Object[]> data = CommonMethods.readDataFromExcel("E:\\Workspace\\TestNG\\src\\test\\resources\\TestData\\postalCode.xlsx");
+//        Change the below as per your system
+        List<Object[]> data = CommonMethods.readDataFromExcel("C:\\Users\\Sonam\\Desktop\\Workspace\\SeleniumTestng\\src\\test\\resources\\TestData\\postalCode.xlsx");
         return data.toArray(new Object[0][]);
     }
 
