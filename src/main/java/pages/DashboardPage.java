@@ -34,11 +34,11 @@ public class DashboardPage {
 
     public void navigateToBranchFinder(){
         driver.findElement(menuIcon).click();
-        CommonMethods.forcedWait(5000);
+        CommonMethods.forcedWait(2000);
         // Use JavaScriptExecutor to scroll to the element
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(findBranches));
-        CommonMethods.forcedWait(5000);
+        CommonMethods.forcedWait(4000);
         driver.findElement(findBranches).click();
     }
 

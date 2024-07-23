@@ -35,7 +35,7 @@ public class FindBranchesPage {
 
     public void clickOnSearch(){
         driver.findElement(searchIcon).click();
-        CommonMethods.forcedWait(10000);
+        CommonMethods.forcedWait(5000);
     }
 
     public void clickOnFirstSearch(){
